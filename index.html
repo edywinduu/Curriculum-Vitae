@@ -23,6 +23,9 @@
             padding: 18px 24px;
             gap: 16px;
         }
+        h1 h2 h3 {
+            text-align: center;
+        }
         section {
             background-color: #ffffff;
             border-radius: 12px;
@@ -56,12 +59,11 @@
             padding: 16px 24px;
         }
         section table thead tr td{
-            padding: 20px 4px;
             text-align: center;
         }
         .information-section table tbody tr td {
             align-items: center;
-            gap: 16px;
+            padding: 4px 0;
         }
         .information-section table tbody tr td a {
             text-decoration: none;
@@ -70,8 +72,23 @@
         .information-section table tbody tr td a:hover {
             opacity: 0.7;
         }
-        h1 h2 h3 {
+        .about-section p {
+            text-align: justify;
+        }
+        .kepanitiaan-content {
             text-align: center;
+        }
+        .kepanitiaan-content ul {
+            list-style-type: none;
+            padding-bottom: 16px;
+        }
+        .education-card {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -112,18 +129,26 @@
                         </a>
                     </td>
                     </tr>
+                    <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <a href="mailto:edywindu7@gmail.com" style="display: inline-flex; align-items: center; justify-content: center; gap: 10px;color: #8134AF">
+                            <i class="fa fa-instagram" aria-hidden="true" style="font-size: 28px;"></i>
+                            <span style="font-size: 20px;">Instagram</span>
+                        </a>
+                    </td>
+                    </tr>
             </tbody>
         </table>
     </section>
     <!-- Ringkasan Diri -->
-    <section>
+    <section class="about-section">
         <h1>Tentang Saya</h1>
         <p>
             Saya merupakan seorang mahasiswa dari Jurusan <b>Teknologi Informasi, Fakultas Teknik, Universitas Udayana</b> yang sedang aktif menjalani perkuliahan di Semester 3. Saya menguasai bidang <b>Desain</b> dan <b>Editing Video</b> dari berbagai pengalaman. Dan saat ini sedang menekuni bidang <b>Software Enginnering</b>.
         </p>
     </section>
     <!-- Pengalaman Kepanitiaan-->
-    <section>
+    <section class="kepanitiaan-section">
         <h1>Pengalaman Kepanitiaan</h1>
         <div>
             <div class="kepanitiaan-content">
@@ -145,38 +170,33 @@
         </div>
     </section>
     <!-- Riwayat Pendidikan -->
-    <section>
+    <section class="history-section">
         <h1>Riwayat Pendidikan</h1>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Nama Institusi</th>
-                    <th>Peminatan</th>
-                    <th>Periode</th>
-                    <th>Nilai/IPK</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Smp Negeri 1 Semarapura</td>
-                    <td>-</td>
-                    <td>2022/2023</td>
-                    <td>88/100</td>
-                </tr>
-                <tr>
-                    <td>Sma Negeri 1 Semarapura</td>
-                    <td>MIPA</td>
-                    <td>2025/2026</td>
-                    <td>89,22/100</td>
-                </tr>
-                <tr>
-                    <td>Teknologi Informasi, Fakultas Teknik</td>
-                    <td>-</td>
-                    <td>2025 - Belum Selesai</td>
-                    <td>3,57/4 (saat ini)</td>
-                </tr>
-            </tbody>
-        </table>
+        <div>
+            <article class="education-card">
+                <h2>Universitas Udayana</h2>
+                <p>Teknologi Informasi · Fakultas Teknik</p>
+                <span>2025 — Sekarang</span><br>
+                <span>IPK</span>
+                <strong>3,57 / 4,00</strong>
+            </article>
+
+            <article class="education-card">
+                <h2>SMA Negeri 1 Semarapura</h2>
+                <p>MIPA</p>
+                <span>2023 - 2025</span><br>
+                <span>Nilai</span>
+                <strong>88/100</strong>
+            </article>
+
+            <article class="education-card">
+                <h2>SMP Negeri 1 Semarapura</h2>
+                <p>Umum</p>
+                <span>2021 - 2023</span><br>
+                <span>Nilai</span>
+                <strong>88/100</strong>
+            </article>
+        </div>
     </section>
     <!-- Keterampilan -->
     <section>
