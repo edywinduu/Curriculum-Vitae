@@ -5,16 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biodata Pribadi</title>
     <link rel="icon" href="">
-    
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        html, body{
+            width: 100%;
+            overflow-x: hidden;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        section {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2e8f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+        }
+        section img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+        }
+        section table {
+            width: 600px;
+            text-align: center;
+        }
+        h1 h2 h3 {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <!-- Informasi Pribadi -->
     <section>
         <h1>Personal Information</h1>
-        <img src="https://i.pinimg.com/736x/e6/9a/ea/e69aea1888808b170077bedd70df1df7.jpg" alt="">
+        <img src="foto_pribadi.jpg" alt="">
         <table>
             <tr>
-                <td><h2>
+                <td colspan="3"><h2>
                     I Kadek Edy Windu Saputra</h2>Front-End Developer | Multimedia & Video Editor</td>
             </tr>
             <tr>
